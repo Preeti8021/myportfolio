@@ -34,7 +34,7 @@ html{
     font-style: italic;
     font-size: 1.0rem;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
 }
 .navbar ul li a{
     text-decoration:rgb(255, 83, 3);
@@ -134,7 +134,7 @@ background:url('https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLu
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 .intro{
-    width: 600px;
+    width: 700px;
     display: flex;
     align-items: center;
 }
@@ -202,8 +202,8 @@ background:url('https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLu
 .box{
     display: flex;
     flex-direction: column;
-    width: 350px;
-    height: 220px;
+    width: 380px;
+    height: 260px;
     border: 1px solid rgb(20, 20, 20);
     margin: 10px;
     align-items: center;
@@ -213,7 +213,9 @@ background:url('https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLu
     background: linear-gradient(to top, rgba(25, 13, 103, 0.671) 50%, rgb(255, 115, 0) 50%);
     background-size: 100% 200%;
     transition: all .6s;
+    font-size: large;
 }
+
 .box:hover{
     background-position: left bottom;
     color: rgb(201, 183, 183);
@@ -229,8 +231,8 @@ background:url('https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLu
 .box2{
     display: flex;
     flex-direction: column;
-    width: 350px;
-    height: 220px;
+    width: 380px;
+    height: 260px;
     border: 1px solid black;
     margin: 10px;
     align-items: center;
@@ -240,6 +242,7 @@ background:url('https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLu
     background: linear-gradient(to top, rgba(25, 13, 103, 0.671) 50%, rgb(255, 115, 0) 50%);
     background-size: 100% 200%;
     transition: all .4s;
+
 }
 .box2:hover{
     background-position: right bottom;
@@ -261,9 +264,9 @@ background:url('https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLu
     /* Projects section */
         #projects{
     display: flex;
+    margin-bottom: auto;
     flex-direction: column;
-    background-color: rgb(14, 32, 77);
-    height: 500PX;
+    height: 700PX;
     justify-content:top center;
     align-items:center;
     color:rgb(0, 0, 0);
@@ -273,17 +276,19 @@ background:url('https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLu
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
     background:url('https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLuYMKSqO8hMvHrblIO2VmwG.jpg') no-repeat center center/cover;
   }
+  #projects .heading{
+      font-size: 40px;
+  }
 
     #projects .projects {
       flex-direction: column;
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 20 auto;
       padding: 40px 0;
+      align-items: center;
+      justify-content: center;
     }
-    #projects .projects-header h1 {
-      margin-bottom: 50px;
-      font-size: large;
-    }
+
     #projects .all-projects {
       display: flex;
       align-items: center;
@@ -298,18 +303,20 @@ background:url('https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLu
       width: 80%;
       margin: 20px auto;
       overflow: hidden;
-      border-radius: 10px;
+      border-radius: 40px;
     }
     #projects .project-info {
-      padding: 30px;
+      padding: 80px;
       flex-basis: 50%;
       height: 100%;
       display: flex;
+      font-style: italic;
       align-items: flex-start;
       justify-content: center;
       flex-direction: column;
-      background-image: linear-gradient(60deg, #ff4d00 0%, #ae290b 100%);
-      color: white;
+      background-image: linear-gradient(60deg, #ff4d00 0%, #d8340f 100%);
+      color: rgb(6, 14, 81);
+      text-shadow: 0;
     }
     #projects .project-info h1 {
       font-size: 4rem;
@@ -317,7 +324,7 @@ background:url('https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLu
     }
 
 
-    /* contact Section */
+/* contact Section */
     /* #contact{
         display: flex;
         flex-direction: column;
@@ -570,19 +577,19 @@ hr{
         </style>
     
     <section id="projects">
-      <h1>PROJECTS</h1>
+        <div class="heading"><h1>PROJECTS</h1></div>
+      
         <div class="projects container">
             <div class="projectheader"><h2>Recent Project</h2></div>
           <div class="all-projects">
             <div class="project-item">
               <div class="project-info">
-                <h2>Project 1</h2>
                 <h2>I Love Coding</h2>
                 <p>Designed a website for the people who feel coding is boring and difficult.
                   Introduced many easy methods and easy understandable website to learn coding.
                   Various methods and tips of coding.
                 </p>
-              </div>
+              </div></div></div>
             
     </section>
 
