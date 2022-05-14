@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="table.css">
     <title>My Portfolio</title>
 </head>
   <style>*{
@@ -96,9 +97,7 @@ html{
     font-style: italic;
     font-size: 200;
 }
-.h1 span{
-    color: white;
-}
+
 
 
 
@@ -204,54 +203,54 @@ background:url('https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLu
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 230px;
-    border: 1px solid black;
+    height: 220px;
+    border: 1px solid rgb(20, 20, 20);
     margin: 10px;
     align-items: center;
     text-align: justify;
     padding: 10px;
     border-radius: 15px;
-    background: linear-gradient(to top, rgba(15, 6, 81, 0.671) 50%, rgb(255, 255, 255) 50%);
+    background: linear-gradient(to top, rgba(25, 13, 103, 0.671) 50%, rgb(255, 115, 0) 50%);
     background-size: 100% 200%;
     transition: all .6s;
 }
 .box:hover{
     background-position: left bottom;
-    color: wheat;
+    color: rgb(201, 183, 183);
     border: none;
-    box-shadow: 0 0 10px rgb(9, 17, 81);
+    box-shadow: 0 0 10px rgb(255, 52, 2);
 }
 .box image{
     width: 80px;
     height: 50px;
-    background-color: rgb(10, 22, 93);
+    background-color: rgb(14, 26, 95);
     padding: 10px;
 }
 .box2{
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 230px;
+    height: 220px;
     border: 1px solid black;
     margin: 10px;
     align-items: center;
     text-align: justify;
     padding: 10px;
     border-radius: 15px;
-    background: linear-gradient(to top, rgba(6, 142, 201, 0.671) 50%, rgb(255, 255, 255) 50%);
+    background: linear-gradient(to top, rgba(25, 13, 103, 0.671) 50%, rgb(255, 115, 0) 50%);
     background-size: 100% 200%;
-    transition: all .6s;
+    transition: all .4s;
 }
 .box2:hover{
     background-position: right bottom;
-    color: rgb(166, 110, 6);
+    color: rgb(211, 202, 235);
     border: none;
-    box-shadow: 0 0 10px orange;
+    box-shadow: 0 0 10px rgb(255, 123, 0);
 }
 .box2 image{
     width: 80px;
     height: 50px;
-    background-color: rgb(23, 12, 84);
+    background-color: rgb(203, 199, 223);
     padding: 10px;
 }
 
@@ -268,7 +267,11 @@ background:url('https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLu
     color:rgb(0, 0, 0);
     font-size: x-large;
     font-style: italic;
-}
+    color:  rgb(255, 85, 0);
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  }
+
 
     /* contact Section */
     /* #contact{
@@ -282,7 +285,7 @@ background:url('https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLu
         font-style: italic;
     } */
     /*End contact Section */
-    
+
     .contactbody{
         min-height: 100vh;
         width: 100%;
@@ -396,39 +399,9 @@ background:url('https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLu
         box-shadow: rgb(20, 18, 18) rgb(255, 255, 255) rgb(210, 36, 36);
       }
       
-      @media (max-width: 950px) {
-        .container{
-          width: 90%;
-          padding: 30px 40px 40px 35px ;
-        }
-        .container .content .right-side{
-         width: 75%;
-         margin-left: 55px;
-      }
-      }
-      @media (max-width: 820px) {
-        .container{
-          margin: 40px 0;
-          height: 100%;
-        }
-        .container .content{
-          flex-direction: column-reverse;
-        }
-       .container .content .left-side{
-         width: 100%;
-         flex-direction: row;
-         margin-top: 40px;
-         justify-content: center;
-         flex-wrap: wrap;
-       }
-       .container .content .left-side::before{
-         display: none;
-       }
-       .container .content .right-side{
-         width: 100%;
-         margin-left: 0;
-       }
-      }
+     
+      
+      
       
 /*footer*/
 #footer{
@@ -529,15 +502,18 @@ hr{
                     <li>Python</li>
                     <li>Java</li>
                     <li>Basics of matlab</li>
-                    </ul>
+                    </ul><br>
                             I am fascinated to know more about technology and I keep hustling for it.</p>
             </div>
             <div class="box2">
               <p>Languages I can communicate in:</p>
+              <br>
               <ul><li>English</li>
                 <li>Hindi</li>
                 <li>Telugu</li>
                    </ul>
+                   <br>
+                   <p>I love to learn new languages and explore the world.</p>
               </div>
     </section>
     <div class="1"><hr></div>
@@ -562,6 +538,26 @@ hr{
     background-color: rgb(246, 75, 13) ;
     border: none;
 }
+
+
+@media only screen and (max-width:700px){
+    nav ul{
+        width:100%;
+        position: absolute;
+        top:0px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+    nav ul li a{
+        color: #fff;
+    }
+}
     </style>
 
 
@@ -575,7 +571,6 @@ hr{
     </form> -->
 <section id="contact">
   <div class="contactbody">
-    <h1>CONTACT ME</h1>
     <div class="container">
   <div class="content">
     <div class="left-side">
